@@ -87,7 +87,7 @@ def split_to_components(image):
 	components = []
 	for prop in props:
 		h = prop.bbox[2] - prop.bbox[0]
-		if prop.area < min_area: # пропуск мелкого мума по площади
+		if prop.area < min_area: # пропуск мелкого шума по площади
 			continue
 		if h < min_h: # пропуск слишком низких компонент
 			continue
